@@ -29,27 +29,34 @@ header{
 .header.item:active{
     filter: brightness(0.8);
 }
-.content{
+main{
     display:grid;
-    grid-template-rows: auto auto auto 1fr;
-    gap: 1rem;
-    margin: 0 2rem;
+    grid-auto-flow: column;
+    grid-template-columns: 1fr 1fr;
 }
 .title{
     display:grid;
-    justify-items: center;
+    place-self: center;
 }
-.books{
+.title h1 {
+    color: rgba(4, 4, 4, 0.777)
+}
+.title h3 {
+    color: rgba(84, 81, 81, 0.777)
+}
+.title-link{
+    text-decoration: none;
+    color: white;
+    background-color:#023047;
+    border-radius: 10px;
+    padding: 0.1rem 1rem;
+}
+.image{
     display:grid;
-    grid-template-rows: auto 1fr;
-    place-items:  center start ;
+    place-self:  center start;
 }
-.books-item{
-    display:grid;
-    grid-auto-flow: column; 
-    border-top: 1px solid rgb(113, 112, 112);
-    gap: 5rem;
-}
-.material-symbols-outlined{
-    color:initial
+.image img{
+    width: 300px;
+    border-radius: 20px ;
+   
 }
