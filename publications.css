@@ -16,12 +16,20 @@ header{
     gap: 2rem;
     padding: 1rem 2rem;
 }
-.header.item{
+.header.item,
+details{
     text-decoration: none;
     padding: 0.5rem 1rem;
     border-radius: 10px;
     color: white;
     background-color:#023047;
+    place-self: center;
+}
+.header.item:hover{
+    filter: brightness(1.2);
+}
+.header.item:active{
+    filter: brightness(0.8);
 }
 .header.item:hover{
     filter: brightness(2);
@@ -29,6 +37,18 @@ header{
 .header.item:active{
     filter: brightness(0.8);
 }
+details a{
+    text-decoration:none;
+    color:white;
+}
+details a:hover{
+    text-decoration:underline;
+    color:#219ebc;
+}
+details > summary {
+    list-style: none;
+  }
+
 main{
     display:grid;
     grid-template-rows:auto auto auto 1fr;
