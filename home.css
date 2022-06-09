@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    height: 100vh;
+    display:grid;
+    grid-template-rows: 6rem 1fr;
+    background-color: #8ecae6;
+}
+header{
+    display:grid;
+    grid-auto-flow: column;
+    place-content: center;
+    gap: 2rem;
+    padding: 1rem 2rem;
+}
+.header.item{
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 10px;
+    color: white;
+    background-color:#023047;
+    place-self: center;
+}
+.header.item:hover{
+    filter: brightness(1.2);
+}
+.header.item:active{
+    filter: brightness(0.8);
+}
+main{
+    display:grid;
+    grid-auto-flow: column;
+    grid-template-columns: auto auto auto;
+}
+.title{
+    display:grid;
+    place-self: center;
+    gap:10px;
+}
+.title h1 {
+    color: rgba(4, 4, 4, 0.777);
+    font-size: 3rem;
+}
+.title h3 {
+    color: rgba(84, 81, 81, 0.777)
+}
+.title-link{
+    text-decoration: none;
+    color: white;
+    background-color:#ff8c5b;
+    border-radius: 10px;
+    padding: 0.1rem 1rem;
+}
+.image{
+    display:grid;
+    place-self:  center ;
+}
+.image img{
+    max-width: 300px ;
+    border-radius: 200px ;
+   
+}
+.note-contact{
+    display:grid;
+    place-items: center start;
+    gap: 1rem;
+}
+.note{
+    font-family: 'Dancing Script', cursive;
+    font-size: 1.5rem;
+
+}
+details > summary {
+    list-style: none;
+  }
+
+
+footer {
+    display: grid;
+    place-items: center;
+    gap: 10px;
+    padding: 2rem;
+    background-color: #219ebc;
+  }
+  .experiences {
+    display: grid;
+    gap: 10px;
+  }
+  .experience-one,
+  .experience-two
+  {
+    display: grid;
+    grid-auto-flow: column;
+    gap: 20px;
+    background-color: #e7e1dc;
+    padding: 5px;
+    align-items: center;
+  }
+  .exp-image img {
+    width: 40px;
+  }
+  .experience-one a,
+  .experience-two a{
+    text-decoration: none;
+    color: initial;
+  }
+  .back-to-top {
+    background-color: hsl(78deg 10% 20%);
+    display: grid;
+    place-items: center;
+    padding: 10px;
+  }
+  .back-to-top a {
+    text-decoration: none;
+    color: #e7e1dc;
+  }

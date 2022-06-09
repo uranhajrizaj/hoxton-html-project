@@ -1,0 +1,121 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    height: 100vh;
+    display:grid;
+    grid-template-rows: 6rem 1fr;
+    background-color: #8ecae6;
+}
+header{
+    display:grid;
+    grid-auto-flow: column;
+    place-content: center;
+    gap: 2rem;
+    padding: 1rem 2rem;
+}
+.header.item{
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 10px;
+    color: white;
+    background-color:#023047;
+}
+.header.item:hover{
+    filter: brightness(2);
+}
+.header.item:active{
+    filter: brightness(0.8);
+}
+main{
+    display:grid;
+    grid-template-rows:auto auto auto 1fr;
+    gap: 10px;
+}
+h1{
+    place-self: center;
+}
+h2{
+    padding-left: 30px;
+}
+.books{
+    display:grid;
+    grid-template-rows: auto 1fr;
+    gap: 20px;
+    /* place-content: center; */
+}
+.books-item-one{
+    display:grid;
+    place-content: start;
+    border-bottom: 1px solid gray;
+    padding: 10px
+}
+.book-one{
+    display:grid;
+    grid-template-columns: 50px 300px 20px;
+     background-color: #219ebc;
+     border-radius: 10px;
+    padding: 1rem
+}
+.title,
+.store{
+    place-self: center;
+}
+.material-symbols-outlined{
+    color:initial
+}
+.material-symbols-outlined:hover{
+    transform: scale(2);
+    color: red;
+}
+.book-one:hover{
+    filter: brightness(0.8);
+}
+.research{
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid gray;
+}
+.apps{
+    display:grid;
+    grid-template-rows: auto 1fr;
+
+}
+.apps-content{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    justify-self: center;
+}
+.project{
+    display:grid;
+    place-content: space-between;
+    padding:1rem;
+}
+.project.two{
+    place-content: center;
+}
+.project.three{
+    place-content:  start center;
+}
+.project.for{
+    place-content:   center;
+}
+.project1{
+    border: 1px solid;
+    background-color: #f7f4f3;
+    padding: 5px 10px;
+    display: grid;
+    grid-template-rows: auto 6rem auto auto;
+    gap: 7px;
+  }
+  button a {
+    text-decoration: none;
+    color: #e7e1dc;
+  }
+  button {
+    background-color: #219ebc;
+    place-items: center;
+    border: none;
+    padding: 7px;
+  }

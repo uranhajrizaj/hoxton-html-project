@@ -7,7 +7,7 @@
     height: 100vh;
     display:grid;
     grid-template-rows: 6rem 1fr;
-    background-color: #8ecae6; 
+    background-color:#8ecae6; 
 }
 header{
     display:grid;
@@ -15,6 +15,7 @@ header{
     place-content: center;
     gap: 2rem;
     padding: 1rem 2rem;
+   
 }
 .header.item{
     text-decoration: none;
@@ -29,27 +30,17 @@ header{
 .header.item:active{
     filter: brightness(0.8);
 }
-.content{
-    display:grid;
-    grid-template-rows: auto auto auto 1fr;
-    gap: 1rem;
-    margin: 0 2rem;
-}
-.title{
-    display:grid;
-    justify-items: center;
-}
-.books{
+main{
     display:grid;
     grid-template-rows: auto 1fr;
-    place-items:  center start ;
+    gap: 30px;
+    padding: 1rem 2rem;
+
 }
-.books-item{
-    display:grid;
-    grid-auto-flow: column; 
-    border-top: 1px solid rgb(113, 112, 112);
-    gap: 5rem;
-}
-.material-symbols-outlined{
-    color:initial
+.text{
+    font-size: 1.3rem;
+    font-weight: bold;
+    /* color: #ff8c5b; */
+    max-width: 75%;
+    place-self:  start center ;
 }
