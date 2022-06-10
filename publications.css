@@ -104,12 +104,12 @@ h2{
 }
 .apps-content{
     display:grid;
-    grid-template-columns:repeat(auto-fit, minmax(180px, 1fr)) ;
+    grid-template-columns:repeat(auto-fit, minmax(200px, 1fr)) ;
     place-content: center;
-    gap:20px;
 }
 .project{
     display:grid;
+    place-content: space-between;
     padding:1rem;
 }
 .project1{
