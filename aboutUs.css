@@ -6,7 +6,7 @@
 .container{
     height: 100vh;
     display:grid;
-    grid-template-rows: 6rem 1fr;
+    /* grid-template-rows: auto 1fr; */
     background-color: #8ecae6;
 }
 header{
@@ -62,4 +62,74 @@ main{
     /* color: #ff8c5b; */
     max-width: 75%;
     place-self:  start center ;
+}
+.header-mobile{
+    display:none;
+}
+@media screen and (max-width: 600px){
+    .header{
+        display:none;
+    }
+    details{
+        display:none;
+    } 
+    .header-mobile{
+        display:block;
+    }
+    input{
+        display:none;
+    }
+    .text{
+        font-size: 1rem;
+    }
+}
+
+@media (max-width:38em) {
+    body{
+        background-color: #8ecae6;
+    }
+	#mainMenu {
+		display:none;
+		overflow:hidden; 
+		padding:0.25em;
+		border-top:2px solid #248;
+	}
+	#mainMenu li {
+        list-style: none;
+		float:left;
+		width:50%;
+	}
+	#mainMenu a {
+        text-decoration: none;
+		display:block;
+		padding:0.75em;
+		margin:0.25em;
+		background:#DEF;
+	}
+	#menuShowHide + label {
+		display:block;
+		padding:1em;
+		margin-bottom:1em;
+		text-align:center;
+		font-weight:bold;
+		background:#036;
+		color:#FFF;
+	} 
+	#menuShowHide + label:active,
+	#menuShowHide + label:focus,
+	#menuShowHide + label:hover {
+		background:#06C;
+	}
+	#menuShowHide + label:before {
+		content:"Show menu";
+	}
+	#menuShowHide:checked + label {
+		margin:0;
+	}
+	#menuShowHide:checked + label:before {
+		content:"Hide Menu";
+	}
+	#menuShowHide:checked ~ #mainMenu {
+		display:block;
+	}
 }

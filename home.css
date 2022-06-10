@@ -127,3 +127,117 @@ footer {
     text-decoration: none;
     color: #e7e1dc;
   }
+  .main-mobile{
+    display:none;
+  }
+  .header-mobile{
+      display:none;
+  }
+  .main-item{
+      background-color: #036;
+      padding: 0.5rem;
+      display: inline-block;
+      border-radius: 50px;
+      text-decoration: none;
+      color: white;
+  }
+  .main-item:hover{
+      filter:brightness(1.2);
+      
+  }
+  @media screen and (max-width: 600px){
+      header{
+          display:none
+      }
+      .header-mobile{
+          display:block;
+      }
+      main{
+          display:none;
+      }
+      .main-mobile{
+      display:block;
+      place-self: start center  ;
+      margin-top: 5rem;
+     
+      }
+      .image img{
+          width: 70px;
+          place-self: center;
+      }
+      .title h1{
+            font-size: 2rem;
+      }
+      .note-contact{
+          display:none;
+      }
+      }
+    @media screen and (max-width: 600px){
+    .header{
+        display:none;
+    }
+    details{
+        display:none;
+    } 
+    .header-mobile{
+        display:block;
+    }
+    input{
+        display:none;
+    }
+    .text{
+        font-size: 1rem;
+    }
+}
+
+@media (max-width:38em) {
+    body{
+        background-color: #8ecae6;
+    }
+	#mainMenu {
+		display:none;
+		overflow:hidden; 
+		padding:0.25em;
+		border-top:2px solid #248;
+	}
+	#mainMenu li {
+        list-style: none;
+		float:left;
+		width:50%;
+	}
+	#mainMenu a {
+        text-decoration: none;
+		display:block;
+		padding:0.75em;
+		margin:0.25em;
+		background:#DEF;
+	}
+	#menuShowHide + label {
+		display:block;
+		padding:1em;
+		margin-bottom:1em;
+		text-align:center;
+		font-weight:bold;
+		background:#036;
+		color:#FFF;
+	} 
+	#menuShowHide + label:active,
+	#menuShowHide + label:focus,
+	#menuShowHide + label:hover {
+		background:#06C;
+	}
+	#menuShowHide + label:before {
+		content:"Show menu";
+	}
+	#menuShowHide:checked + label {
+		margin:0;
+	}
+	#menuShowHide:checked + label:before {
+		content:"Hide Menu";
+	}
+	#menuShowHide:checked ~ #mainMenu {
+		display:block;
+	}
+}
+      
+  

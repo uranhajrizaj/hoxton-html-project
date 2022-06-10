@@ -104,22 +104,13 @@ h2{
 }
 .apps-content{
     display:grid;
-    grid-template-columns: 1fr 1fr 1fr ;
-    justify-self: center;
+    grid-template-columns:repeat(auto-fit, minmax(180px, 1fr)) ;
+    place-content: center;
 }
 .project{
     display:grid;
     place-content: space-between;
     padding:1rem;
-}
-.project.two{
-    place-content: center;
-}
-.project.three{
-    place-content:  start center;
-}
-.project.for{
-    place-content:   center;
 }
 .project1{
     border: 1px solid;
@@ -139,3 +130,64 @@ h2{
     border: none;
     padding: 7px;
   }
+header{
+    display: none;
+}
+@media (max-width:38em) {
+    body{
+        background-color: #8ecae6;
+    }
+    .header-mobile{
+        display:block;
+    }
+    input{
+        display:none;
+    }
+	#mainMenu {
+		display:none;
+		overflow:hidden; 
+		padding:0.25em;
+		border-top:2px solid #248;
+	}
+    main{
+        margin-top: 6rem;
+    }
+	#mainMenu li {
+        list-style: none;
+		float:left;
+		width:50%;
+	}
+	#mainMenu a {
+        text-decoration: none;
+		display:block;
+		padding:0.75em;
+		margin:0.25em;
+		background:#DEF;
+	}
+	#menuShowHide + label {
+		display:block;
+		padding:1em;
+		margin-bottom:1em;
+		text-align:center;
+		font-weight:bold;
+		background:#036;
+		color:#FFF;
+	} 
+	#menuShowHide + label:active,
+	#menuShowHide + label:focus,
+	#menuShowHide + label:hover {
+		background:#06C;
+	}
+	#menuShowHide + label:before {
+		content:"Show menu";
+	}
+	#menuShowHide:checked + label {
+		margin:0;
+	}
+	#menuShowHide:checked + label:before {
+		content:"Hide Menu";
+	}
+	#menuShowHide:checked ~ #mainMenu {
+		display:block;
+	}
+}
