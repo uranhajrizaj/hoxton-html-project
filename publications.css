@@ -106,10 +106,10 @@ h2{
     display:grid;
     grid-template-columns:repeat(auto-fit, minmax(180px, 1fr)) ;
     place-content: center;
+    gap:20px;
 }
 .project{
     display:grid;
-    place-content: space-between;
     padding:1rem;
 }
 .project1{
@@ -132,6 +132,11 @@ h2{
   }
 .header-mobile{
     display: none;
+}
+.apple-image,
+.youtube-image,
+.gmail-image{
+    place-self: center;
 }
 @media (max-width:38em) {
     body{
